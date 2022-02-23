@@ -252,6 +252,10 @@
     row-gap: 1rem;
 }
 
+.home__social-icon{
+  color: var(--first-color);
+}
+
 .home__social-icon:hover{
     color: var(--first-color-alt);
 }
@@ -672,14 +676,17 @@
 /*================ PORTFOLIO ================*/
 .portfolio__container{
     overflow: initial;
+    
 }
 
 .portfolio__content{
     padding: 0 1.5rem;
+    height: fit-content;
 }
 
 .portfolio__img{
-    width: 256px;
+    align-items: center;
+    align-self: center;
     border-radius: .5rem;
     justify-content: center;
 }
@@ -690,8 +697,46 @@
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
 }
+
+.wrap__portfolio{
+    height: fit-content;
+}
+
 .portfolio__button:hover .button__icon{
   transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -5rem;
+}
+
+.swiper-button-next{
+    left: -5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet
+{
+   outline: none;
 }
 /*================ PROJECT IN MIND ================*/
 
