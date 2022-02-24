@@ -853,10 +853,13 @@
      row-gap: 1.5rem;
  }
 
- .footer__link:h over{
+ .footer__link:hover{
      color: var(--first-color-lighter);
  }
-
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
  .footer__social:hover{
     color: var(--first-color-lighter);
 }
@@ -899,6 +902,9 @@
 }
 
 /* Show scroll */
+.show-scroll{
+    bottom: 5rem;
+}
 
 
 
